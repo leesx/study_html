@@ -1,0 +1,190 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>学习html</title>
+    <!--方式一  推荐-->
+    <link rel="stylesheet" href="./css/style.css">
+    <script src=""></script>
+    <!--方式二-->
+    <style>
+        *{
+            margin:0;
+            padding:0;
+        }
+        body{
+            font-size: 12px;
+        }
+        /*标签选择器*/
+        ul,li,ol{
+            list-style: none;
+        }
+        div.box{
+            float: left;
+
+            width: 100px;
+            height: 100px;
+
+            margin:10px ;
+
+
+
+            margin-bottom: 0;
+            margin-top:0;
+
+            padding: 10px;
+            border:1px solid #ff0000;
+            border-color: red;
+            border-width: 5px;
+
+            font-size:10px;
+            font-family: '宋体' ,'微软雅黑';
+            color:#f60;
+            font-weight: bold;
+            font-style: italic;
+            text-decoration: underline;
+
+            /*position: relative;*/
+            /*position: absolute;*/
+            /*position: static; 默认值*/
+            /*position: fixed;*/
+
+            /*float: left;*/
+            /*float: right;*/
+            /*float: none;*/
+
+
+        }
+        /*class 选择器*/
+        .box{
+          position: relative;
+            width:100px;
+            height: 100px;
+            border:1px dashed #f60;
+            margin:10px;
+            padding: 5px;
+            font-size:12px;
+            text-decoration: underline;
+        }
+        .box span{
+          position: absolute;
+          right:0;
+          top:0;
+          width: 30px;
+          height: 30px;
+          background-color: #f60;
+          border-radius: 10px;
+          color:#fff;
+        }
+        /*id 选择器*/
+        #title{
+            color: red;
+        }
+
+        ul > li >a{
+
+        }
+
+
+        input[type="checkbox"]{
+
+        }
+
+        .box_inner{}
+        .box-inner{
+
+        }
+        .boxInner{
+
+        }
+
+
+    </style>
+    <script>
+        window.onload = function () {
+
+        }
+    </script>
+</head>
+<body>
+    <div>
+        <!--块级元素-->
+        <div class="box">
+            <h1>块级元素</h1>
+        </div>
+        <div class="box">
+            <h1>块级元素</h1>
+        </div>
+        <div class="box">
+            <h1>块级元素</h1>
+        </div>
+        <div class="box">
+            <span>10</span>
+            <h1>块级元素</h1>
+        </div>
+        <div class="box">
+            <h1>块级元素</h1>
+        </div>
+        <h3 style="color: #f00;" id="title">这是标题</h3>
+        <h3 style="color: #f00;" id="title2">这是标题</h3>
+        <h2></h2>
+        ... <h6></h6>
+        <p onclick="alert('hello')">这是一行文本</p>
+        <style>
+          .list li{
+            float: left;
+            margin-right: 10px;
+          }
+        </style>
+        <ul class="list">
+            <li><a href="">无序列表</a></li>
+            <li><a href="">无序列表</a></li>
+            <li><a href="">无序列表</a></li>
+            <li><a href="">无序列表</a></li>
+        </ul>
+
+
+        <ol>
+            <li><a href="">1_hello</a></li>
+            <li><a href="">2_hello</a></li>
+            <li><a href="">3_hello</a></li>
+            <li><a href="">4_hello</a></li>
+            <li><a href="">5_hello</a></li>
+            <li><a href="">6_hello</a></li>
+            <li><a href="">7_hello</a></li>
+            <li><a href="">8_hello</a></li>
+            <li><a href="">9_hello</a></li>
+            <li><a href="">10_hello</a></li>
+        </ol>
+        <div class="box">
+            <h1>块级元素</h1>
+        </div>
+    </div>
+
+
+    <!--行内元素-->
+    <span>户籍</span> <a href="http://www.baidu.com" target="_blank">百度</a>
+    <button>按钮</button>
+    <image src="http://t12.baidu.com/it/u=2518739795,3639349769&fm=170&s=D305B0445C1B1A5B50B2AA9303&w=218&h=146&img.JPG" />
+
+    <input type="text" value="" />
+    <input type="password">
+    <input type="radio" name="sex" value="女">女
+    <input type="radio" name="sex" value="男" checked>男
+    <label for=""><input type="checkbox">电视剧</label>
+    <label for=""><input type="checkbox">电影</label>
+    <label for=""><input type="checkbox">音乐</label>
+    <label for=""><input type="checkbox">戏剧</label>
+    <label for=""><input type="checkbox">小饰品</label>
+
+    <input type="number">
+    <input type="tel">
+
+    <!--上传文件-->
+    <input type="file">
+    <textarea name="" id="" cols="30" rows="10"></textarea>
+    <div class="box">
+        <h1>块级元素</h1>
+    </div>
+</body>
+</html>
